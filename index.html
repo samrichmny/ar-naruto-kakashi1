@@ -9,6 +9,8 @@
   <body style="margin: 0; overflow: hidden;">
     <a-scene embedded arjs>
       <a-marker type="pattern" url="pattern-images.patt" id="custom-marker">
+        
+        <!-- Naruto -->
         <a-entity
           gltf-model="model/naruto_uzumaki_running_animation.glb"
           scale="0.5 0.5 0.5"
@@ -16,6 +18,8 @@
           rotation="0 90 0"
           animation-mixer="loop: repeat">
         </a-entity>
+
+        <!-- Kakashi -->
         <a-entity
           gltf-model="model/kakashi.glb"
           scale="0.4 0.4 0.4"
@@ -23,6 +27,8 @@
           rotation="0 -90 0"
           animation-mixer="clip: Idle; loop: repeat">
         </a-entity>
+
+        <!-- Suara -->
         <a-sound 
           id="naruto_alive" 
           src="model/naruto_alive.mp3" 
@@ -30,6 +36,7 @@
           loop="true">
         </a-sound>
       </a-marker>
+
       <a-entity camera></a-entity>
     </a-scene>
 
